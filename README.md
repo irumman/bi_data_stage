@@ -21,7 +21,7 @@ DB: database name in TRG_HOST
 
 1.2 Tables to be staged:
 
-TABLES[N]="<host_address of source>:<database name>:<schema name>:<table name>:<mode>"
+TABLES[N]="host_address of source:database name:schema name:table name:mode"
 Mode should be refresh/snapshot
 Examples:
 
