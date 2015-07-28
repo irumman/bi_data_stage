@@ -22,7 +22,9 @@ DB: database name in TRG_HOST
 1.2 Tables to be staged:
 
 TABLES[N]="host_address of source:database name:schema name:table name:mode"
+
 Mode should be refresh/snapshot
+
 Examples:
 
 TABLES[1]="10.5.1.2:reportdb:schema_partitions:events:snapshot"
