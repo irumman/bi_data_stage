@@ -187,13 +187,10 @@ do
 $PGENGINE/psql -h $TRG_HOST $DB <<_eof_
    \set ON_ERROR_STOP on
     begin;
-        alter table ${SCHEMA_NAME}.$TABLE_NAME owner to adm_qawriter;
-        grant all on table ${SCHEMA_NAME}.$TABLE_NAME to adm_qawriter;
-        grant all on table ${SCHEMA_NAME}.$TABLE_NAME to parasol_app_ap;
-        grant all on table ${SCHEMA_NAME}.$TABLE_NAME to parasol;
+        alter table ${SCHEMA_NAME}.$TABLE_NAME owner to user1;
+        grant all on table ${SCHEMA_NAME}.$TABLE_NAME to user1;
+        grant all on table ${SCHEMA_NAME}.$TABLE_NAME to user2;
         grant select on table ${SCHEMA_NAME}.$TABLE_NAME to readonly;
-        grant all on table ${SCHEMA_NAME}.$TABLE_NAME to adm_processing;
-        grant select on table ${SCHEMA_NAME}.$TABLE_NAME to reporting;
 
    commit; 
 _eof_
