@@ -6,7 +6,7 @@ LOG=/opt/msp/pkg/postgres/dba/BIscripts/import_ad_ed_vsp.log
 export PGPASSWORD=1q2w3e4r PAGER=less PGUSER=postgres
 PGENGINE=/opt/msp/pkg/postgres/bin
 TRG_HOST="10.3.1.1"
-DB="parasol_attmpp"
+DB="database"
 echo "job started ..."
 echo "$(date)"
 
